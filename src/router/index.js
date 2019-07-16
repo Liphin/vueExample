@@ -1,23 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import entry from '@/components/entry/entry'
 import login from '@/components/entry/login/login'
 import register from '@/components/entry/register/register'
 import manage from '@/components/manage/manage'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/entry/:opt',
+      path: '/entry',
+      name: 'entry',
+      component: entry,
       children: [
         {
-          path: '/login',
+          path: 'login',
           name: 'login',
           component: login
         },
         {
-          path: '/register',
+          path: 'register',
           name: 'register',
           component: register
         }

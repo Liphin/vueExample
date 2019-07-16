@@ -3,7 +3,5 @@
  */
 
 let entryMixins = {
-  methods: {
-
-  }
+    methods: {}
 };

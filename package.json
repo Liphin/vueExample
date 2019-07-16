@@ -11,11 +11,25 @@
     "e2e": "node test/e2e/runner.js",
     "test": "cnpm run unit && cnpm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "server": "node server/server.js"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.1.1",
+
+    "crypto": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify": "^3.0.1"
+
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -73,7 +87,38 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+
+    "ali-oss": "^4.4.3",
+    "assert": "^1.4.1",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "co": "^4.6.0",
+    "del": "^3.0.0",
+    "express": "^4.16.3",
+    "express-device": "^0.4.2",
+    "fs": "^0.0.1-security",
+    "gm": "^1.23.1",
+    "gulp-uglify-es": "^1.0.4",
+    "html2canvas": "^1.0.0-rc.1",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "js-beautify": "^1.7.5",
+    "merge-images": "^1.1.0",
+    "mongodb": "^3.1.13",
+    "multer": "^1.3.1",
+    "mysql": "^2.16.0",
+    "neo4j-driver": "^1.7.2",
+    "node-schedule": "^1.3.0",
+    "pinyinlite": "^1.2.1",
+    "querystring": "^0.2.0",
+    "request": "^2.87.0",
+    "url": "^0.11.0",
+    "util": "^0.11.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.5.1"
+
   },
   "engines": {
     "node": ">= 6.0.0",
